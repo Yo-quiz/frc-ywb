@@ -134,7 +134,7 @@ function checkGameEnd() {
 // Mostrar la imagen de "¡Felicidades!" al finalizar el juego
 function showCongratsImage() {
     const congratsImg = document.createElement("img");
-    congratsImg.src = "congrats.png";
+    congratsImg.src = "congrats.gif";
     congratsImg.id = "congrats-image";
     congratsImg.style.position = "fixed";
     congratsImg.style.bottom = "0";
@@ -187,6 +187,6 @@ startTimer();
 window.addEventListener("beforeunload", (event) => {
     if (score > 0) { // Mostrar advertencia solo si hay progreso
         event.preventDefault();
-        event.returnValue = "¿Estás seguro de que quieres salir? Se perderá todo el progreso.";
+        event.returnValue = "Êtes-vous sûr de vouloir partir? Tous les progrès seront perdus.";
     }
 });
